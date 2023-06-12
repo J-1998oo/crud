@@ -1,0 +1,24 @@
+<?php
+
+if (isset($_GET["id"])) {
+    $id = $_GET["id"];
+
+    $serverName = "localhost";
+    $userName = "mohammad";
+    $password = "456987";
+    $database = "colorlibWithCRUD";
+
+    // Create connection
+    $connection = new mysqli($serverName, $userName, $password, $database);
+
+    $sql="DELETE FROM cards WHERE id=$id";
+    $connection->query($sql);
+
+    echo "Record removed successfully";
+}
+
+
+
+header("location:/admin.php");
+exit;
+?>

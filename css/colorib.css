@@ -1,0 +1,295 @@
+:root {
+  --lighter-gray-color: #888888;
+  --light-gray-color: #333333;
+  --dark-gray-color: #222222;
+  --green-color: #7ac64d;
+  --white: #ffffff;
+  --border-color: #e5e5e5;
+}
+
+button {
+  border: none;
+  background-color: var(--white);
+}
+
+p {
+  margin: 0;
+}
+
+.c-g {
+  color: var(--lighter-gray-color);
+}
+.f-b {
+  font-weight: bold;
+}
+
+/*nav*/
+.navBar {
+  height: 60px;
+  background-color: var(--light-gray-color);
+}
+
+.d-flex.justify-content-between.collapse.show {
+  display: none !important;
+}
+
+.logo {
+  background-size: cover;
+}
+
+.magdesign {
+  background-color: var(--dark-gray-color);
+  color: var(--lighter-gray-color);
+}
+
+.magdesign:hover {
+  color: var(--lighter-gray-color);
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  border-left: var(--lighter-gray-color) 1px solid;
+  color: var(--lighter-gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon.active {
+  background-color: var(--green-color);
+  color: var(--white);
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: var(--dark-gray-color);
+  color: var(--white);
+}
+
+.touggle {
+  height: 186px;
+  background-color: #323232;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  height: 100px;
+  width: 50px;
+}
+
+.arrow a {
+  display: flex;
+  margin-top: 50%;
+  justify-content: center;
+}
+
+.arrow a svg {
+  color: var(--white);
+}
+
+/*nav*/
+
+/* side nav */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+}
+
+.first-chiled-arrow {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  border: var(--lighter-gray-color) 1px solid;
+  padding: 10px;
+  font-size: 8px;
+}
+
+a.active {
+  color: orange !important;
+}
+
+.second-chiled-arrow {
+  position: absolute;
+  right: 30px;
+  top: 260px;
+  border: var(--lighter-gray-color) 1px solid;
+  padding: 10px;
+  font-size: 8px;
+}
+.sidenav-body li {
+  list-style-type: none;
+}
+
+.sidenav a {
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: orange;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* side nav */
+
+/*site-nav*/
+.searchLogo {
+  color: #cccccc;
+  font-size: 12px;
+}
+.border-search {
+  border: #cccccc 1px solid;
+}
+.socialMedia {
+  color: var(--dark-gray-color);
+  font-size: 15px;
+}
+.fa-bars {
+  font-size: 30px;
+}
+
+/*site-nav*/
+/*slider*/
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: var(--lighter-gray-color);
+}
+
+.slick-dots:hover {
+  cursor: pointer;
+}
+
+.slick-dots .slick-active {
+  color: orange;
+}
+
+.slick-dots button {
+  display: none;
+}
+
+.slick-arrow {
+  color: var(--lighter-gray-color);
+  border: none;
+  background-color: var(--white);
+}
+
+.slick-prev {
+  position: absolute;
+  right: 100px;
+  top: 100%;
+}
+
+.slick-next {
+  position: absolute;
+  right: 50px;
+  top: 100%;
+}
+
+.slick-arrow[aria-disabled="true"],
+.slick-arrow[aria-disabled="true"] {
+  opacity: 0.5;
+}
+.slider_main_img{
+  height: 483px;
+}
+
+/*slider*/
+/* cards */
+
+.main_img {
+  height: 267px;
+  width: 400px;
+}
+
+.prof_img {
+  height: 45px;
+  width: 45px;
+}
+/* cards */
+/* footer */
+
+.footter {
+  height: 150px;
+}
+
+.btn.btn-primary {
+  background-color: orange;
+  color: var(--white);
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  color: orange;
+  background-color: var(--white);
+}
+
+.section {
+  background-color: #f8f9fa;
+}
+
+.txt {
+  border: var(--light-gray-color) 1px solid;
+}
+
+.fotr-icon {
+  background-color: lightgray;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.red-heart {
+  color: #e13535;
+}
+
+.underline-hover:hover {
+  color: black;
+  border-bottom: orange 5px solid;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* footer */
+
+
