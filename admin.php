@@ -228,8 +228,6 @@ if (isset($_SESSION['username'])) {
         <h1 class="mt-5 text-center">Log In Page</h1>
         <div class="container mt-5">
             <form class="mt-5 text-center" method="POST">
-
-
                 <div class="row mt-5 mb-3">
                     <label class="col-sm-3 mt-5  col-form-label">Log in</label>
                     <div class="col-sm-6">

@@ -332,29 +332,29 @@
     </div>
     <div class="for-slick-slider s-multiple-items">
 
-                <?php
+        <?php
 
 
-                $serverName = "localhost";
-                $userName = "mohammad";
-                $password = "456987";
-                $database = "colorlibWithCRUD";
+        $serverName = "localhost";
+        $userName = "mohammad";
+        $password = "456987";
+        $database = "colorlibWithCRUD";
 
-                $connection = new mysqli($serverName, $userName, $password, $database);
+        $connection = new mysqli($serverName, $userName, $password, $database);
 
-                if ($connection->connect_error) {
-                    die("Connection failed: " . $connection->connect_error);
-                }
+        if ($connection->connect_error) {
+            die("Connection failed: " . $connection->connect_error);
+        }
 
-                $sql = "SELECT * FROM slider2";
-                $result = $connection->query($sql);
+        $sql = "SELECT * FROM slider2";
+        $result = $connection->query($sql);
 
-                if (!$result) {
-                    die("Invalid query: " . $connection->error);
-                }
+        if (!$result) {
+            die("Invalid query: " . $connection->error);
+        }
 
-                while ($row = $result->fetch_assoc()) {
-                    echo "
+        while ($row = $result->fetch_assoc()) {
+            echo "
                         <div class='items'>
                             <div class='container d-flex justify-content-center'>
                                 <div class='col-11 mt-3 d-flex flex-column'>
@@ -390,14 +390,14 @@
                             </div>
                         </div>
                     ";
-                }
+        }
 
-                $connection->close();
+        $connection->close();
 
-                ?>
+        ?>
 
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
 
