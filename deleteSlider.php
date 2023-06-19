@@ -5,7 +5,7 @@ if (isset($_GET["id"])) {
 
     $serverName = "localhost";
     $userName = "mohammad";
-    $password = "456987";
+    $password = "159875320Mohammad123Joker$";
     $database = "colorlibWithCRUD";
 
     // Create connection
